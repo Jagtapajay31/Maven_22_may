@@ -67,7 +67,7 @@ public class DemoQAOne {
 		driver.findElement(By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[3]/label")).click();
 		Thread.sleep(2000);
 		
-//		driver.findElement(By.id("uploadPicture")).sendKeys("C:\\Users\\os\\OneDrive\\Pictures\\Screenshots.png");
+		driver.findElement(By.id("uploadPicture")).sendKeys("C:\\Users\\os\\eclipse-workspace\\Maven_22_may\\Screenshot\\FormDetails.jpg");
 		Thread.sleep(2000);
 		
 		driver.findElement(By.id("currentAddress")).sendKeys("Tapi");
@@ -87,8 +87,8 @@ public class DemoQAOne {
 		driver.findElement(By.id("submit")).click();
 		Thread.sleep(2000);
 		
-//		File file=((org.openqa.selenium.remote.RemoteWebDriver) driver).getScreenshotAs(OutputType.FILE);
-//		Files.copy(file, new File("C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Top_Assessment\\\\ScreenShots\\FormDetails.jpg"));
+		File file=((org.openqa.selenium.remote.RemoteWebDriver) driver).getScreenshotAs(OutputType.FILE);
+		Files.copy(file, new File("C:\\Users\\os\\eclipse-workspace\\Maven_22_may\\Screenshot\\FormDetails.jpg"));
 		driver.close();
 	}
 	
