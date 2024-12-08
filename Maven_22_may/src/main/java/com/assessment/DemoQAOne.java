@@ -64,6 +64,9 @@ public class DemoQAOne {
 		driver.findElement(By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[2]/label")).click();
 		Thread.sleep(2000);
 		
+		driver.findElement(By.id("subjectsInput")).click();
+		Thread.sleep(2000);
+		
 		driver.findElement(By.xpath("//*[@id=\"hobbiesWrapper\"]/div[2]/div[3]/label")).click();
 		Thread.sleep(2000);
 		
